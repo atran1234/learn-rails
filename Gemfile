@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
 
 
+ruby '2.2.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
+
+#rails defaults
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -12,6 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
+#therubyracer - for Linux environment
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
@@ -42,4 +47,22 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+#learn rails
+
+gem 'foundation-rails' #front-end framework
+gem 'gibbon' #access to the MailChimp API
+gem 'google_drive' #use Google spreadsheet for data storage
+gem 'high_voltage' #for static pages like "about"
+gem 'simple_form' #forms made easy
+group :development do
+	gem 'better_errors' #helps when things go wrong
+	gem 'quiet_assets' #suppresses distrcting messages in the log
+	gem 'rails_layout' #generates files for an application layout
+end
+
+
+
+
+
 
